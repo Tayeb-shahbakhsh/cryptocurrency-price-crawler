@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Trade</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string-array name="currencies">
+        <item>Bitcoin</item>
+        <item>Ethereum</item>
+        <item>Binance Coin</item>
+        <item>Cardano</item>
+        <item>Tether</item>
+        <item>XRP</item>
+        <item>Solana</item>
+        <item>Polkadot</item>
+        <item>USD Coin</item>
+        <item>Dogecoin</item>
+        <item>Terra</item>
+        <item>Uniswap</item>
+        <item>Binance USD</item>
+        <item>Avalanche</item>
+        <item>Chainlink</item>
+        <item>Litecoin</item>
+        <item>Wrapped Bitcoin</item>
+        <item>Bitcoin Cash</item>
+        <item>SHIBA INU</item>
+        <item>Algorand</item>
+        <item>Stellar</item>
+        <item>Polygon</item>
+        <item>Filecoin</item>
+        <item>VeChain</item>
+        <item>Internet Computer</item>
+        <item>Cosmos</item>
+        <item>Axie Infinity</item>
+        <item>Ethereum Classic</item>
+        <item>FTX Token</item>
+        <item>Dai</item>
+        <item>Tezos</item>
+        <item>THETA</item>
+        <item>Bitcoin BEP2</item>
+        <item>Hedera</item>
+        <item>Fantom</item>
+        <item>Monero</item>
+        <item>Elrond</item>
+        <item>Crypto.com Coin</item>
+        <item>PancakeSwap</item>
+        <item>EOS</item>
+        <item>eCash</item>
+        <item>Klaytn</item>
+        <item>NEAR Protocol</item>
+        <item>Aave</item>
+        <item>IOTA</item>
+        <item>Quant</item>
+        <item>The Graph</item>
+        <item>Waves</item>
+        <item>Bitcoin SV</item>
+
+    </string-array>
+</resources>

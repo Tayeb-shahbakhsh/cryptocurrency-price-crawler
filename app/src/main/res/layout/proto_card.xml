@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/protoCardContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/currencyImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/btc"
+            />
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_weight=".40"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/bprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bprice: $1,200"/>
+
+            <TextView
+                android:id="@+id/cprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cprice: $45,230"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight=".30">
+            <TextView
+                android:id="@+id/change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="change: %400"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buyDate"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/removeProto"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_weight=".20"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:backgroundTint="#A31212"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

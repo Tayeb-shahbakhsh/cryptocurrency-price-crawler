@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <TextView
+            android:drawableTop="@drawable/ic_baseline_shopping_bag_24"
+            android:drawableTint="@color/primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="my currencies"
+            android:textColor="@color/primary"
+            android:textSize="34sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nothingYet"
+        android:layout_marginTop="160dp"
+        android:visibility="visible"
+        android:drawableBottom="@drawable/ic_baseline_sick_24"
+        android:layout_width="match_parent"
+        android:drawableTint="@color/secondary"
+        android:layout_height="wrap_content"
+        android:text="Nothing yet"
+        android:textColor="@color/primaryText"
+        android:textSize="24sp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/nothingDesc"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="add your currency value to see the progress"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
+
+
+    <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/addCurrency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="add"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="15dp"
+                />
+
+        </LinearLayout>
+
+</LinearLayout>

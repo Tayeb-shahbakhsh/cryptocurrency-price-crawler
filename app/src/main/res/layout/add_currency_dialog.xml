@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+   <LinearLayout
+       android:gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="3dp"
+       >
+       <com.google.android.material.textfield.TextInputLayout
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+           android:layout_width="130dp"
+           android:layout_height="wrap_content"
+           android:hint="currency">
+
+           <AutoCompleteTextView
+               android:id="@+id/CurrencyDropdown"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:textSize="14dp"
+               android:inputType="none"
+               android:text="Bitcoin" />
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+       <com.google.android.material.textfield.TextInputLayout
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+           android:layout_width="160dp"
+           android:layout_height="58dp"
+
+           android:hint="enter value">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/valueCurrencyEditText"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:inputType="numberDecimal" />
+       </com.google.android.material.textfield.TextInputLayout>
+   </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="160dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="enter price">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/priceCurrencyEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="5dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+    android:id="@+id/submit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="submit"/>
+</LinearLayout>
