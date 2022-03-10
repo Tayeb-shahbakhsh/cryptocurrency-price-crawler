@@ -27,7 +27,6 @@ class HomeFragment() : Fragment() {
     private lateinit var homeBinding: FragmentHomeBinding
     private lateinit var dao: CurrencyDao
 
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -37,7 +36,8 @@ class HomeFragment() : Fragment() {
 
         //start crawler to get currencies data
         // crawler return mutable list contains currencies data as CurrencyEntityW[EP-S
-        var list = SplachActivity().getCurrencyList()
+        dao = CurrencyDatabase.buildDB(requireContext()).currencyDao()
+        var list = dao.getAll().toMutableList()
 
         val adapter = myAdapter(list)
         homeBinding.homerv.adapter = adapter
@@ -46,21 +46,5 @@ class HomeFragment() : Fragment() {
         return homeBinding.root
     }
 
-    private fun startCrawler() : MutableList<CurrencyEntitiy>{
-
-        val intent = Intent(requireContext(), Crawler::class.java)
-        activity?.startService(intent)
-
-        var list =  Crawler().crawl()
-
-        dao = CurrencyDatabase.buildDB(requireContext()).currencyDao()
-
-        if (dao.getAll().isEmpty()){
-            dao.insertAll(list)
-        }else {
-            dao.update(list)
-        }
-        return list
-    }
 
 }

@@ -31,10 +31,5 @@ class MainActivity : AppCompatActivity() {
 //        setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
-
-//        Log.d("crawler", "onCreate: ${currencyList.marketCap}")
-//
-//        dao.insert(currencyList)
-
     }
 }

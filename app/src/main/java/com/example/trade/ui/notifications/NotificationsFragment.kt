@@ -56,9 +56,6 @@ class NotificationsFragment : Fragment() {
         var arrayAdapter = ArrayAdapter(requireContext(), R.layout.item_dropdown, languages)
 
         dialogBinding.CurrencyDropdown.setAdapter(arrayAdapter)
-
-
-
         dialogBinding.submit.setOnClickListener {
 
             protoBinding.nothingDesc.visibility = View.GONE
@@ -72,11 +69,7 @@ class NotificationsFragment : Fragment() {
             var price = dialogBinding.priceCurrencyEditText.text
 
             watchingCurrenciesList.add(arrayOf(value.toString(),price.toString(), currency.toString()))
-
             alertDialog.dismiss()
         }
-
     }
-
-
 }

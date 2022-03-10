@@ -21,10 +21,12 @@
         <entry key="..\:/Android/Trade/app/src/main/res/layout/item_dropdown.xml" value="0.26268115942028986" />
         <entry key="..\:/Android/Trade/app/src/main/res/layout/proto_card.xml" value="0.25" />
         <entry key="..\:/Android/Trade/app/src/main/res/layout/trade_card.xml" value="0.26268115942028986" />
+        <entry key="..\:/Users/SamGostar/StudioProjects/cryptocurrency-price-crawler/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/SamGostar/StudioProjects/cryptocurrency-price-crawler/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
